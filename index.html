@@ -55,8 +55,10 @@
       var email = document.querySelector('#email').value;
       var password = document.querySelector('#password').value
       
-      firebase.createUser(email,password);
-      
+      firebase.auth().createUserWithEmailAndPassword(email, password)
+    .catch(function (err) {
+   // Handle errors
+      });      
       var credential = firebase.auth.EmailAuthProvider.credential(email, password);
       var auth = firebase.auth();
       var currentUser = auth.currentUser;
