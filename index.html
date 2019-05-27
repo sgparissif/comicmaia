@@ -8,13 +8,13 @@
 <body>
   <form>
     <div>
-      <input id="email" type="text" placeholder="Email...">
+      <input id="email" type="text" placeholder="Correo...">
     </div>
     <div>
-      <input id="password" type="password" placeholder="Password...">
+      <input id="password" type="password" placeholder="Contraseña...">
     </div>
     <div>
-      <button id="sign-in">Sign In/Register</button>
+      <button id="sign-in">Registrar</button>
       <button id="sign-out">Sign Out</button>
     </div>
   </form>
@@ -54,6 +54,9 @@
       e.stopPropagation();
       var email = document.querySelector('#email').value;
       var password = document.querySelector('#password').value
+      
+      firebase.createUser(email,password);
+      
       var credential = firebase.auth.EmailAuthProvider.credential(email, password);
       var auth = firebase.auth();
       var currentUser = auth.currentUser;
