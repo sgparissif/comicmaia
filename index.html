@@ -13,8 +13,27 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .fa-anchor,.fa-coffee {font-size:200px}
 </style>
 <body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
 
-<<form action="action_page.php" style="border:1px solid #ccc">
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDHO4IvJJq7jAyx8JEH5KXTRNPZR7gWd0E",
+    authDomain: "comicmania-parissi.firebaseapp.com",
+    databaseURL: "https://comicmania-parissi.firebaseio.com",
+    projectId: "comicmania-parissi",
+    storageBucket: "comicmania-parissi.appspot.com",
+    messagingSenderId: "170044031100",
+    appId: "1:170044031100:web:f62e0a3d7533ac2a"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<form action="action_page.php" style="border:1px solid #ccc">
   <div class="container">
     <h1>Sign Up</h1>
     <p>Please fill in this form to create an account.</p>
