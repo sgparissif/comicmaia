@@ -11,8 +11,9 @@ signupForm.addEventListener('submit', (e) => {
   auth.createUserWithEmailAndPassword(email, password).then(cred => {
     console.log(cred.user);
     // close the signup modal & reset form
-    const modal = document.querySelector('#modal-signup');
-    M.Modal.getInstance(modal).close();
-    signupForm.reset();
+    alert("Usuario creado con exito " +email);
+    
   });
 });
+
+  
