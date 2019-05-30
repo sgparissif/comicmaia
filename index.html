@@ -33,9 +33,17 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Russo One', sans-serif;
 <!-- Header -->
 <header class=" w3-center" style="background-color:#ed1d24">
  <h1 class="w3-margin w3-jumbo w3-text-white">COMICMANIA</h1>
-      <form id="signup-form" >
+      <form id="signup-form" > 
         <div class="input-field">
                       <label for="signup-email">Correo Electronico</label>
+  <br>
+
+          <input type="email" id="signup-email" required class="w3-container  w3-center"/>
+              <br>              <label for="signup-email">Correo Electronico</label>
+  <br>
+
+          <input type="email" id="signup-email" required class="w3-container  w3-center"/>
+              <br>              <label for="signup-email">Correo Electronico</label>
   <br>
 
           <input type="email" id="signup-email" required class="w3-container  w3-center"/>
@@ -77,7 +85,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Russo One', sans-serif;
     // make auth and firestore references
     const auth = firebase.auth();
     const db = firebase.firestore();
-
     // update firestore settings
     db.settings({ timestampsInSnapshots: true });
   </script>
